@@ -1,0 +1,37 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Task: Improve only Home sections 5, 6, and 7.
+
+Sections:
+5. SAP Capabilities Preview
+6. Zoho Services Preview
+7. Industry / Initiative Highlights
+
+Current issue:
+The sections are readable but image-heavy/template-like. Make them more enterprise consulting and less generic.
+
+SAP preview target:
+- Use a premium split or structured block.
+- Include concise SAP capability bullets.
+- Use one meaningful enterprise/SAP visual or dashboard-style graphic only.
+- Link to /sap-capabilities.
+
+Zoho preview target:
+- Match the site style, not old Zoho style.
+- Mention Zoho business support, bookkeeping/BPO, workflow automation, and UK/international support naturally.
+- Use one purposeful CRM/business operations visual only.
+- Link to /zoho-services-overview.
+
+Industry/initiative target:
+- Make it look like an enterprise supported-solutions matrix or mega-grid.
+- Use darker or contrast band if appropriate, but keep it premium.
+- Avoid repeating identical card styles from previous sections.
+- Show industry and business initiative coverage clearly.
+
+Rules:
+- Do not add unrelated pages.
+- Do not overuse images.
+- Use clean icons and compact content.
+- Keep Next.js + TypeScript static export compatible.
+
+After editing, test desktop/mobile and summarize changed files.

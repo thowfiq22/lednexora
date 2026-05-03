@@ -1,0 +1,19 @@
+﻿Continue the Lednexora website redevelopment from the last completed work.
+
+Read first:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\11-project-changelog.md
+
+Then read only the files needed for the next unfinished task.
+
+Do not change accepted scope.
+Do not repeat completed work unless the changelog says it needs fixing.
+
+Output:
+1. last completed work
+2. current unfinished task
+3. files likely affected
+4. next step plan
+
+Then proceed only after confirming the next task is clear.
+

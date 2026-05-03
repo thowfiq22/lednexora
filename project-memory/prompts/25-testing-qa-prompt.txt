@@ -1,0 +1,26 @@
+﻿Continue the Lednexora website redevelopment.
+
+Task: Run QA/testing for the current build or selected page/module.
+
+Read:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\09-qa-launch-checklist.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+
+Scope to test:
+[PASTE PAGE/MODULE OR FULL SITE HERE]
+
+Check:
+1. accepted page exists and matches scope
+2. desktop layout
+3. mobile layout
+4. text overflow
+5. header/footer/nav
+6. forms and validation
+7. WhatsApp link
+8. SEO title/meta/H1
+9. broken links/assets
+10. visual consistency with approved style
+
+Output findings first, then fixes needed. If fixing is approved, make scoped fixes and update changelog.
+

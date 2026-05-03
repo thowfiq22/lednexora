@@ -1,0 +1,53 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Task: Upgrade the existing Home page from generic corporate template to premium enterprise consulting style.
+
+Read only if needed:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\02-design-system-and-reference-style.md
+F:\lednexora\project-memory\03-page-by-page-section-plan.md
+F:\lednexora\project-memory\12-source-asset-inventory.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+
+Reference direction:
+- Rimini Street for enterprise rhythm: bold hero, trust strip, process path, proof band, resources preview, strong contact CTA, deep footer.
+- Salesforce/IBM for whitespace, clarity, simple enterprise navigation.
+- Kissflow only for controlled blue gradient energy.
+
+Confirmed stack:
+- Next.js + TypeScript frontend
+- static export compatible
+- PHP/MySQL backend only for CMS/forms/onboarding later
+- do not create public PHP pages
+
+Current issue:
+The Home page works but looks like a generic template. Improve visual identity, section rhythm, and enterprise credibility.
+
+Global redesign rules:
+1. Do not rewrite all Home code in one huge response. Work section by section if needed.
+2. Keep accepted section order and routes.
+3. Use polished placeholder content where real assets are missing, but keep it easy to replace later.
+4. Do not use emoji icons. Use existing Icons.tsx or clean line icons.
+5. Do not overuse generated office images. Use images only where they add premium enterprise meaning.
+6. Make the hero the strongest visual moment.
+7. Make sections visually different: hero, logo/trust strip, process/path, proof band, resources, CTA should not all look like cards.
+8. Use blue/white brand base with controlled deep-blue gradients and occasional bright accent.
+9. Keep Source Sans 3 as primary font.
+10. Test desktop and mobile after changes.
+
+Required Home visual direction:
+- Hero: full-width immersive dark blue hero with sweeping blue light/network/SAP-style enterprise visual on the right, inspired by Rimini energy but not copied.
+- Trust strip: premium logo/badge strip, not empty grey boxes. Use refined placeholder tiles until real logos arrive.
+- Service pathway: replace generic 4 cards with stronger enterprise pathway layout, inspired by Rimini's numbered/process flow but adapted to SAP, Zoho, Consulting, Insights.
+- Why Lednexora: make it a bold proof/value band, not a standard text-image block. Use blue/white or bright brand accent band with strong proof points.
+- SAP/Zoho previews: reduce generic image dependency. Use structured content blocks, tabs, mini lists, and one purposeful visual each.
+- Industry/initiative: make it look like an enterprise mega-grid or supported-sectors matrix, not repeated template cards.
+- Proof block: use confident placeholder proof modules and certification placeholders, but avoid pretending they are final verified assets.
+- Insights: make it resemble Rimini resources/cards with strong editorial cards and clean category labels.
+- CTA: make it a strong conversation band similar in purpose to Rimini's yellow block, but in Lednexora blue gradient style.
+- Footer: dense enterprise footer, clean columns, not oversized.
+
+Output before editing:
+1. brief list of planned visual changes
+2. files that will be changed
+Then implement in small chunks.

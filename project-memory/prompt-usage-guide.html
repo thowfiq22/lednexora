@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lednexora Prompt Usage Guide</title>
+<style>
+  body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#1f2937;margin:0;padding:28px;line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto;background:#fff;border:1px solid #dbe4ee;border-radius:8px;padding:28px;box-shadow:0 6px 24px rgba(15,45,80,.08)}
+  h1{margin:0 0 6px;color:#123a74;font-size:28px}
+  .sub{color:#64748b;margin:0 0 22px;font-size:14px}
+  h2{color:#123a74;border-bottom:1px solid #dbe4ee;padding-bottom:6px;margin-top:28px;font-size:19px}
+  h3{color:#1f4e79;margin:18px 0 8px;font-size:16px}
+  .box{background:#eef6ff;border-left:5px solid #0f5db8;padding:14px 16px;margin:16px 0;border-radius:4px}
+  .warn{background:#fff8e6;border-left-color:#d99a00}
+  .ok{background:#eefaf1;border-left-color:#22a45a}
+  code{background:#f1f5f9;border:1px solid #e2e8f0;padding:2px 5px;border-radius:4px;font-size:13px}
+  table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:14px}
+  th,td{border:1px solid #dbe4ee;padding:10px;text-align:left;vertical-align:top}
+  th{background:#eaf2fb;color:#123a74}
+  tr:nth-child(even) td{background:#fafcff}
+  ul,ol{padding-left:22px}
+  li{margin:5px 0}
+  .small{font-size:13px;color:#64748b}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Lednexora Prompt Usage Guide</h1>
+  <p class="sub">Use this guide whenever you continue the project in Codex, Antigravity, or another AI coding tool.</p>
+
+  <div class="box ok">
+    <strong>Main rule:</strong> Work one page/module at a time. Do not let AI start the full project from a memory file. Do not remember everything manually. Open the needed prompt file, paste it into the AI tool, and let the AI read the project-memory files.
+  </div>
+
+  <h2>1. Folder Locations</h2>
+  <table>
+    <tr><th>Purpose</th><th>Path</th></tr>
+    <tr><td>Project memory files</td><td><code>F:\lednexora\project-memory</code></td></tr>
+    <tr><td>Prompt files</td><td><code>F:\lednexora\project-memory\prompts</code></td></tr>
+    <tr><td>Old content and reference screenshots</td><td><code>F:\lednexora\source-content</code></td></tr>
+  </table>
+
+  <h2>2. Correct Development Order</h2>
+  <div class="box warn">
+    <strong>Important:</strong> Do not use prompt <code>27</code> as a work step. It is only the master order list. Open it when you forget what to do next.
+  </div>
+
+  <table>
+    <tr><th>Step</th><th>Prompt File To Use</th><th>When To Use</th></tr>
+    <tr><td>1</td><td><code>00-fresh-new-chat-start.txt</code></td><td>Use once when starting in a new chat/tool.</td></tr>
+    <tr><td>2</td><td><code>22-navigation-header-footer-build.txt</code></td><td>Build global layout first: header, footer, navigation, dropdowns, CTA, WhatsApp.</td></tr>
+    <tr><td>3</td><td><code>01-home-page-plan.txt</code></td><td>Plan Home page before coding because Home is the most important page.</td></tr>
+    <tr><td>4</td><td><code>02-home-page-build.txt</code></td><td>Build Home page after the plan is approved.</td></tr>
+    <tr><td>5</td><td><code>03-about-lednexora-plan-build.txt</code></td><td>Build About Lednexora.</td></tr>
+    <tr><td>6</td><td><code>04-contact-consultation-plan-build.txt</code></td><td>Build Contact / Consultation.</td></tr>
+    <tr><td>7</td><td><code>05-sap-capabilities-plan-build.txt</code></td><td>Build SAP Capabilities.</td></tr>
+    <tr><td>8</td><td><code>06-by-initiative-solutions-plan-build.txt</code></td><td>Build By Initiative Solutions.</td></tr>
+    <tr><td>9</td><td><code>07-by-industry-solutions-plan-build.txt</code></td><td>Build By Industry Solutions.</td></tr>
+    <tr><td>10</td><td><code>08-lednexora-sap-solutions-plan-build.txt</code></td><td>Build Lednexora SAP Solutions.</td></tr>
+    <tr><td>11</td><td><code>09-sap-success-resources-plan-build.txt</code></td><td>Build SAP Success Resources.</td></tr>
+    <tr><td>12</td><td><code>10-sap-consultation-plan-build.txt</code></td><td>Build SAP Consultation.</td></tr>
+    <tr><td>13</td><td><code>11-zoho-services-overview-plan-build.txt</code></td><td>Build Zoho Services Overview.</td></tr>
+    <tr><td>14</td><td><code>12-zoho-business-solutions-packages-plan-build.txt</code></td><td>Build Zoho Business Solutions / Packages.</td></tr>
+    <tr><td>15</td><td><code>13-zoho-consultation-plan-build.txt</code></td><td>Build Zoho Consultation.</td></tr>
+    <tr><td>16</td><td><code>20-cms-admin-plan.txt</code></td><td>Plan CMS/Admin before coding dynamic content.</td></tr>
+    <tr><td>17</td><td><code>14-insights-media-updates-page-plan-build.txt</code></td><td>Build public Insights & Media Updates page.</td></tr>
+    <tr><td>18</td><td><code>21-cms-admin-build.txt</code></td><td>Build CMS/Admin backend.</td></tr>
+    <tr><td>19</td><td><code>18-employee-onboarding-form-plan.txt</code></td><td>Plan onboarding form after getting current Microsoft Form fields.</td></tr>
+    <tr><td>20</td><td><code>19-employee-onboarding-form-build.txt</code></td><td>Build onboarding form.</td></tr>
+    <tr><td>21</td><td><code>15-privacy-policy-page.txt</code></td><td>Build Privacy Policy page.</td></tr>
+    <tr><td>22</td><td><code>16-terms-and-conditions-page.txt</code></td><td>Build Terms & Conditions page.</td></tr>
+    <tr><td>23</td><td><code>17-accessibility-statement-page.txt</code></td><td>Build Accessibility Statement page.</td></tr>
+    <tr><td>24</td><td><code>25-testing-qa-prompt.txt</code></td><td>Run QA for page/module or full site.</td></tr>
+  </table>
+
+  <h2>3. When To Use Prompt 26</h2>
+  <p>Use <code>26-end-of-day-update-prompt.txt</code> after each completed page/module, or at the end of the work day.</p>
+  <div class="box">
+    <strong>Best habit:</strong> after one page is completed and tested, use prompt <code>26</code>. This updates the changelog, so a new chat can continue tomorrow without confusion.
+  </div>
+
+  <h2>4. If Chat Closes Or You Continue Later</h2>
+  <p>Use:</p>
+  <p><code>23-continue-from-last-session.txt</code></p>
+  <p>This tells the AI to read the changelog, find the last completed work, and continue from the correct next task.</p>
+
+  <h2>5. If There Is A Bug Or Issue</h2>
+  <p>Use:</p>
+  <p><code>24-bug-fix-debugging-prompt.txt</code></p>
+  <p>Paste the bug details or screenshot after the prompt. The AI should:</p>
+  <ol>
+    <li>reproduce or inspect the issue</li>
+    <li>identify the affected file/page</li>
+    <li>fix only the related area</li>
+    <li>test again</li>
+    <li>update the changelog</li>
+  </ol>
+
+  <h2>6. If You Forget The Full Order</h2>
+  <p>Open:</p>
+  <p><code>27-full-project-build-order.txt</code></p>
+  <p>This is only a checklist/reference file, not a normal prompt you need to paste every time.</p>
+
+  <h2>7. Token Saving Rule</h2>
+  <div class="box ok">
+    Tell AI to read <code>00-start-here.md</code> first, then only the task-specific files. Do not ask it to reread all project-memory files for every page.
+  </div>
+
+  <h2>8. Simple Daily Workflow</h2>
+  <ol>
+    <li>Start new chat with <code>00-fresh-new-chat-start.txt</code>.</li>
+    <li>Use the next page/module prompt from the order table.</li>
+    <li>Let AI plan/build only that page/module.</li>
+    <li>Use <code>25-testing-qa-prompt.txt</code> if you want QA.</li>
+    <li>Use <code>24-bug-fix-debugging-prompt.txt</code> for bugs.</li>
+    <li>Use <code>26-end-of-day-update-prompt.txt</code> after completion.</li>
+    <li>Next day, use <code>23-continue-from-last-session.txt</code>.</li>
+  </ol>
+
+  <h2>9. Do Not Change These</h2>
+  <ul>
+    <li>Accepted scope: 17 structured interfaces.</li>
+    <li>Frontend stack: Next.js + TypeScript static export for shared hosting/cPanel.</li>
+    <li>Backend stack: PHP/MySQL only for CMS/admin/forms/onboarding.</li>
+    <li>Do not build public website pages as PHP templates.</li>
+    <li>Design direction: Rimini-style enterprise quality, blue/white theme, controlled gradients.</li>
+    <li>Font direction: Source Sans 3 primary, free Rimini-like style.</li>
+    <li>Zoho: included as 3 reduced pages.</li>
+    <li>SAP MBC: not a fixed design page unless explicitly approved later.</li>
+    <li>Admin: limited content update/admin panel, not a full page builder.</li>
+  </ul>
+
+  <p class="small">Last updated: 03-05-2026</p>
+</div>
+</body>
+</html>
+

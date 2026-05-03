@@ -1,0 +1,760 @@
+/* ============================================================
+   ZOHO DIVISION CSS MODULE
+   Premium enterprise style, distinctly different from SAP layout
+   ============================================================ */
+
+.pageWrapper {
+  width: 100%;
+}
+
+/* ─── Hero ─── */
+.zohoHero {
+  position: relative;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #071D3A 0%, #0E2D5A 100%);
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem 0; /* Reduced padding to ensure fit */
+}
+.zohoHero::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center;
+  z-index: 0;
+}
+.zohoHero::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(14,165,233,0.15) 0%, transparent 60%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 900px; /* Wider to reduce line breaks */
+  margin: 0 auto;
+}
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  background: rgba(14,165,233,0.15);
+  color: #7DD3FC;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem; /* Reduced margin */
+  border: 1px solid rgba(14,165,233,0.3);
+}
+.heroTitle {
+  font-size: clamp(2.25rem, 5vw, 3.75rem); /* Scaled down slightly to fit laptops perfectly */
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 1rem; /* Reduced margin */
+  letter-spacing: -0.02em;
+}
+.heroDesc {
+  font-size: 1.125rem; /* Reduced from 1.25rem */
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 2rem; /* Reduced margin */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heroBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--gradient-primary);
+  color: #fff;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--ease-base);
+  box-shadow: 0 8px 20px rgba(18,58,116,0.15);
+}
+.heroBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(18,58,116,0.25);
+}
+
+/* ─── Hero with Form ─── */
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: center;
+}
+.heroFormCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  color: var(--color-text);
+  text-align: left;
+}
+.heroFormCard h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+.heroFormCard p {
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+.formGroup {
+  margin-bottom: 1rem;
+}
+.formGroup label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-heading);
+}
+.formGroup input, .formGroup select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.formGroup input:focus, .formGroup select:focus {
+  border-color: var(--color-accent);
+}
+.formSubmit {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.formSubmit:hover {
+  background: #0ea5e9;
+}
+.formDisclaimer {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+/* ─── Logo Strip ─── */
+.logoStrip {
+  padding: 3rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+.logoStrip p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+.logoGrid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+.logoGrid span {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-heading);
+}
+
+/* ─── Value Prop & Stat ─── */
+.statSection {
+  padding: 6rem 0;
+  background: var(--color-surface-alt);
+}
+.statContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 4rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  border: 1px solid var(--color-border);
+}
+.statText h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.statText p {
+  color: var(--color-muted);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+.statHighlight {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #10B981;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.statHighlight span {
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  display: block;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* ─── 6-Card Grid (Accelerate Digital Transformation) ─── */
+.grid6Section {
+  padding: 8rem 0;
+  background: #ffffff;
+}
+.sectionHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+}
+.sectionHeader h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+.sectionHeader p {
+  font-size: 1.125rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+.grid6Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.grid6Card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+.grid6Card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  border-color: rgba(14,165,233,0.3);
+  transform: translateY(-5px);
+}
+.grid6Icon {
+  width: 48px;
+  height: 48px;
+  color: #0ea5e9;
+  margin-bottom: 1.5rem;
+}
+.grid6Card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 0.75rem;
+}
+.grid6Card p {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* ─── Platform Features (Tabs Layout) ─── */
+.tabsSection {
+  padding: 8rem 0;
+  background: var(--color-surface-alt);
+}
+.tabsLayout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.tabsSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tabItem {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+.tabItemActive {
+  border-left-color: #0ea5e9;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.tabItem h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+.tabItem p {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+.tabImage {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 1rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  border: 1px solid var(--color-border);
+}
+.tabImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* ─── Expert / Testimonial ─── */
+.expertSection {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+.expertCard {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--color-surface-alt);
+  border-radius: 24px;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border: 1px solid var(--color-border);
+}
+.expertAvatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+.expertContent h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 0.25rem;
+}
+.expertContent h4 {
+  font-size: 1rem;
+  color: #0ea5e9;
+  margin-bottom: 1.5rem;
+}
+.expertQuote {
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  font-style: italic;
+  line-height: 1.6;
+  position: relative;
+}
+.expertQuote::before {
+  content: '"';
+  font-size: 4rem;
+  color: rgba(14,165,233,0.2);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-family: serif;
+}
+
+/* ─── FAQs ─── */
+.faqSection {
+  padding: 8rem 0;
+  background: var(--color-surface-alt);
+}
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faqItem {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2rem;
+}
+.faqQuestion {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faqQuestion svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent);
+}
+.faqAnswer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+@media (max-width: 992px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .statContainer, .tabsLayout, .expertCard {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+  .expertAvatar {
+    margin: 0 auto;
+  }
+  .grid6Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .grid6Container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Scroll reveal ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Modern Sticky Service Models Layout ─── */
+.packagesSection {
+  padding: 8rem 0;
+  background: #ffffff;
+  position: relative;
+}
+.stickyLayout {
+  display: flex;
+  gap: 6rem;
+  align-items: flex-start;
+}
+.stickySidebar {
+  position: sticky;
+  top: 120px;
+  flex: 0 0 35%;
+}
+.stickySidebar h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+.stickySidebar p {
+  font-size: 1.25rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+.stickyContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.horizontalPricingCard {
+  background: var(--color-surface-alt);
+  border-radius: 24px;
+  padding: 3.5rem;
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.horizontalPricingCard:hover {
+  background: #ffffff;
+  box-shadow: 0 30px 60px rgba(14,45,90,0.08);
+  transform: translateY(-8px);
+  border-color: rgba(14,165,233,0.3);
+}
+.horizontalPricingCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 6px;
+  background: linear-gradient(90deg, #0ea5e9, #10B981);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.horizontalPricingCard:hover::before {
+  opacity: 1;
+}
+.pricingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.pricingTitleWrap h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+.pricingTitleWrap p {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+.pricingPriceTag {
+  text-align: right;
+}
+.pricingPrice {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1;
+}
+.pricingPrice span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+}
+.pricingBody {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.pricingFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+}
+.pricingFeatures li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: var(--color-heading);
+  font-weight: 500;
+}
+.pricingFeatures li svg {
+  color: #10B981;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(16,185,129,0.1);
+  border-radius: 50%;
+  padding: 3px;
+}
+.pricingAction {
+  flex-shrink: 0;
+}
+.pricingBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #0ea5e9;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.pricingBtn svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+.horizontalPricingCard:hover .pricingBtn {
+  background: #0284c7;
+  transform: scale(1.1);
+}
+.horizontalPricingCard:hover .pricingBtn svg {
+  transform: translateX(4px);
+}
+
+/* ─── Modern Bento Box Portfolio ─── */
+.portfolioSection {
+  padding: 8rem 0;
+  background: #040E1F; /* Dark premium background */
+  color: #fff;
+}
+.portfolioSection h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  gap: 1.5rem;
+}
+.bentoItem {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+  transition: all 0.4s ease;
+}
+.bentoItem:hover {
+  border-color: rgba(14,165,233,0.4);
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.06);
+}
+.bentoLarge {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.bentoTall {
+  grid-row: span 2;
+}
+.bentoWide {
+  grid-column: span 2;
+}
+.bentoImage {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  transition: opacity 0.4s ease, transform 0.8s ease;
+  z-index: 0;
+}
+.bentoItem:hover .bentoImage {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+.bentoContent {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(4,14,31,0.95) 0%, rgba(4,14,31,0) 100%);
+  margin: -2.5rem;
+  padding: 6rem 2.5rem 2.5rem 2.5rem;
+}
+.bentoCategory {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #7DD3FC;
+  background: rgba(14,165,233,0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.bentoContent h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.bentoContent p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .stickyLayout {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .stickySidebar {
+    position: static;
+  }
+  .pricingBody {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bentoGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .bentoLarge, .bentoTall, .bentoWide {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 400px;
+  }
+}
+@media (max-width: 640px) {
+  .pricingFeatures {
+    grid-template-columns: 1fr;
+  }
+  .horizontalPricingCard {
+    padding: 2rem;
+  }
+  .pricingHeader {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .pricingPriceTag {
+    text-align: left;
+  }
+}

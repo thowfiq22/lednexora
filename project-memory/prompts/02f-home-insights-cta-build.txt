@@ -1,0 +1,26 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Read only if needed:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\03-page-by-page-section-plan.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+
+Confirmed stack:
+- Public frontend: Next.js + TypeScript static export
+- Backend only where needed: PHP/MySQL
+- Do not build public pages as PHP templates
+- Work only on the requested Home section chunk
+- Keep output small to avoid token limit
+- Update changelog after a completed chunk
+Task: Build only Home sections 9-10:
+9. Insights & Media Preview
+10. Contact CTA Band
+
+Rules:
+- insights cards are static placeholders now, CMS later
+- CTA links must use accepted URL map
+- WhatsApp link can be placeholder if final number not confirmed
+- keep section polished and responsive
+
+Do not modify footer unless necessary.
+Stop after sections 9-10 are done and summarize changed files.

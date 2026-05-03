@@ -1,0 +1,189 @@
+/* ============================================================
+   BY INITIATIVE SOLUTIONS — Corporate styling
+   ============================================================ */
+
+/* ─── Scroll reveal ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── 2. CATEGORY OVERVIEW ─── */
+.introSection {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+.introGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.introHeading {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.introText {
+  font-size: 1.0625rem;
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+/* ─── 3. INITIATIVE BLOCKS (Transformation / Optimization) ─── */
+.initiativeSection {
+  padding: 6rem 0;
+  background: var(--color-surface-alt);
+  border-top: 1px solid var(--color-border);
+}
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.sectionHeader h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+.sectionHeader p {
+  font-size: 1.0625rem;
+  color: var(--color-muted);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.initiativeCategory {
+  margin-bottom: 5rem;
+}
+.initiativeCategory:last-child {
+  margin-bottom: 0;
+}
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.solutionCard {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.solutionCard:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(14,165,233,.1);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.cardIcon svg {
+  width: 24px;
+  height: 24px;
+}
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+.cardDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* ─── 4. ENGAGEMENT PROCESS ─── */
+.processSection {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+.processStep {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.stepNumber {
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+  border: 3px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1.5rem;
+  position: relative;
+}
+.processGrid::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+.stepTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 0.75rem;
+}
+.stepDesc {
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .cardsGrid { grid-template-columns: repeat(2, 1fr); }
+  .introGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .processGrid { grid-template-columns: repeat(2, 1fr); gap: 4rem 2rem; }
+  .processGrid::before { display: none; }
+}
+
+@media (max-width: 640px) {
+  .cardsGrid { grid-template-columns: 1fr; }
+  .processGrid { grid-template-columns: 1fr; gap: 3rem; }
+}

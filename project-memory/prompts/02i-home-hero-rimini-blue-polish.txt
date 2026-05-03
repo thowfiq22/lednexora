@@ -1,0 +1,39 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Task: Improve only the Home hero and top trust strip.
+
+Do not change other Home sections.
+Do not build any other page.
+
+Current issue:
+Hero is clean but too empty/template-like. It does not yet feel like the client's Rimini-level reference.
+
+Hero target:
+- Full-width immersive enterprise hero.
+- Dark navy/blue base with controlled blue gradient and sweeping light arc/network visual on the right.
+- The right side must have a memorable visual signal, not just faint abstract background.
+- Text stays left but should feel intentionally composed, not floating in empty space.
+- H1 should be bold, confident, and slightly tighter in scale/line-height.
+- CTAs should feel premium and high contrast.
+- Show proof/credibility row near the bottom of hero, with safe placeholder wording.
+- The next trust strip should be visible immediately after hero.
+
+Use sample placeholder proof if needed:
+- 20+ Years SAP Experience
+- Global Delivery Presence
+- Certified SAP Professionals
+- SAP & Zoho Service Expertise
+
+Trust strip target:
+- Replace empty-looking grey boxes with premium placeholder logo/badge tiles.
+- Use labels like Client Logo, Certification, Partner Proof as placeholders.
+- Make it look intentional and client-preview safe.
+
+Important:
+- No emoji icons.
+- No fake real company logos.
+- No public PHP pages.
+- Next.js + TypeScript only for frontend.
+- Keep static export compatible.
+
+After editing, test desktop/mobile hero and summarize changes.

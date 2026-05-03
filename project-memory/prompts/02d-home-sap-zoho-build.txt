@@ -1,0 +1,26 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Read only if needed:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\03-page-by-page-section-plan.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+
+Confirmed stack:
+- Public frontend: Next.js + TypeScript static export
+- Backend only where needed: PHP/MySQL
+- Do not build public pages as PHP templates
+- Work only on the requested Home section chunk
+- Keep output small to avoid token limit
+- Update changelog after a completed chunk
+Task: Build only Home sections 5-6:
+5. SAP Capabilities Preview
+6. Zoho Services Preview
+
+Rules:
+- SAP and Zoho previews must link to accepted pages
+- use concise refined content from old screenshots where useful
+- use professional visuals/placeholders only
+- no fake partner/certification claims
+
+Modify only Home page/CSS/data needed for these sections.
+Stop after sections 5-6 are done and summarize changed files.

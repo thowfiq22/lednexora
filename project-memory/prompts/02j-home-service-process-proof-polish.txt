@@ -1,0 +1,39 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Task: Improve only Home sections 3, 4, and 8.
+
+Sections:
+3. Service Pathway Cards
+4. Why Lednexora
+8. Proof Block
+
+Do not change hero, SAP/Zoho previews, Insights, CTA, or other pages.
+
+Current issue:
+These sections look like normal template cards. They need stronger enterprise presentation.
+
+Section 3 target:
+- Convert generic 4 cards into a premium pathway/process section inspired by Rimini's numbered path.
+- Use a horizontal/stepped flow on desktop and stacked flow on mobile.
+- Four pathways: SAP Services, Zoho Services, Strategic Consulting, Insights & Resources.
+- Make each path feel like a strategic business route, not a simple card.
+
+Section 4 target:
+- Make Why Lednexora a strong value/proof band.
+- Use bold typography and structured proof points.
+- Use one purposeful visual only if it adds value; otherwise use graphic/stat layout.
+- Avoid generic stock-image feeling.
+
+Section 8 target:
+- Make proof block feel premium and trustworthy.
+- Use safe placeholder metrics/proof labels that can later be replaced.
+- Create certification/client proof placeholders that look deliberate.
+
+Rules:
+- No emoji icons.
+- Use clean line icons or existing Icons.tsx.
+- Polished placeholder content is allowed, but keep it replaceable.
+- Do not invent final real client logos/testimonials.
+- Keep static export compatible.
+
+After editing, test desktop/mobile and summarize changed files.

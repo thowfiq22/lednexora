@@ -1,0 +1,25 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Read only if needed:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\03-page-by-page-section-plan.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+
+Confirmed stack:
+- Public frontend: Next.js + TypeScript static export
+- Backend only where needed: PHP/MySQL
+- Do not build public pages as PHP templates
+- Work only on the requested Home section chunk
+- Keep output small to avoid token limit
+- Update changelog after a completed chunk
+Task: Home foundation only.
+
+Create/refine only the minimal Home page structure needed to compile:
+- page file imports
+- sections container structure
+- shared data arrays if useful
+- CSS module import
+
+Do not write all section markup yet.
+Do not create long content blocks.
+Stop after Home shell compiles and summarize changed files.

@@ -1,0 +1,30 @@
+﻿Recommended Lednexora development order:
+
+1. Fresh session setup: use `00-fresh-new-chat-start.txt`
+2. Global design system, header/footer/nav: use `22-navigation-header-footer-build.txt`
+3. Home page planning: use `01-home-page-plan.txt`
+4. Home page build: use `02-home-page-build.txt`
+5. About Lednexora: use `03-about-lednexora-plan-build.txt`
+6. Contact / Consultation: use `04-contact-consultation-plan-build.txt`
+7. SAP Capabilities: use `05-sap-capabilities-plan-build.txt`
+8. By Initiative Solutions: use `06-by-initiative-solutions-plan-build.txt`
+9. By Industry Solutions: use `07-by-industry-solutions-plan-build.txt`
+10. Lednexora SAP Solutions: use `08-lednexora-sap-solutions-plan-build.txt`
+11. SAP Success Resources: use `09-sap-success-resources-plan-build.txt`
+12. SAP Consultation: use `10-sap-consultation-plan-build.txt`
+13. Zoho Services Overview: use `11-zoho-services-overview-plan-build.txt`
+14. Zoho Business Solutions / Packages: use `12-zoho-business-solutions-packages-plan-build.txt`
+15. Zoho Consultation: use `13-zoho-consultation-plan-build.txt`
+16. CMS/Admin plan: use `20-cms-admin-plan.txt`
+17. Insights & Media page: use `14-insights-media-updates-page-plan-build.txt`
+18. CMS/Admin build: use `21-cms-admin-build.txt`
+19. Employee Onboarding plan: use `18-employee-onboarding-form-plan.txt`
+20. Employee Onboarding build: use `19-employee-onboarding-form-build.txt`
+21. Legal pages: use `15`, `16`, `17` legal page prompts
+22. QA each module: use `25-testing-qa-prompt.txt`
+23. Bug fixing when needed: use `24-bug-fix-debugging-prompt.txt`
+24. End of each session: use `26-end-of-day-update-prompt.txt`
+25. If chat/tool closes: use `23-continue-from-last-session.txt`
+
+Rule: after every completed page/module, update `11-project-changelog.md`.
+

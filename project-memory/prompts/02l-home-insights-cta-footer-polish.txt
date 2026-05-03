@@ -1,0 +1,37 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Task: Improve only Home sections 9, 10, and footer if needed.
+
+Sections:
+9. Insights & Media Preview
+10. Contact CTA Band
+11. Footer
+
+Current issue:
+These sections should feel closer to an enterprise reference site, not a simple blog/card/footer template.
+
+Insights target:
+- Create editorial resource cards inspired by Rimini's Latest section.
+- Use strong image/header area, category label, title, short excerpt, and read-more action.
+- Use polished placeholder content now; CMS will replace later.
+- Keep 3 featured cards.
+
+CTA target:
+- Build a strong final conversion band similar in purpose to Rimini's Let's start a conversation section.
+- Use Lednexora blue gradient, not Rimini yellow.
+- Include Schedule Consultation and WhatsApp actions.
+- Make it feel like a closing business conversation, not a normal banner.
+
+Footer target:
+- Corporate multi-column footer.
+- Include company, SAP services, Zoho services, insights, contact, legal.
+- Keep logo visible and readable.
+- Avoid oversized empty footer blocks.
+
+Rules:
+- Do not build CMS backend now.
+- Do not change accepted routes.
+- Keep static export compatible.
+- Test mobile and desktop.
+
+After editing, summarize changed files and update changelog.

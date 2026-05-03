@@ -1,0 +1,10 @@
+You are continuing the Lednexora website redevelopment project.
+
+Before making any decision, read:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\01-final-scope-and-sitemap.md
+F:\lednexora\project-memory\02-design-system-and-reference-style.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+
+Then summarize the accepted scope and ask me only for the next required development input.
+Do not change the accepted scope.

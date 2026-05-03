@@ -1,0 +1,43 @@
+﻿Continue the Lednexora website redevelopment project.
+
+First read:
+F:\lednexora\project-memory\00-start-here.md
+
+Then read only the task-specific memory files needed for this work. Do not reread or paste all memory content unless necessary.
+
+Use source screenshots/assets from:
+F:\lednexora\source-content
+
+Do not change accepted scope, page names, page count, or design direction.
+Use the approved blue/white premium enterprise style with controlled gradient accents and Source Sans 3 as the primary free font.
+
+Confirmed stack:
+- Public frontend: Next.js + TypeScript
+- Frontend output: static export for shared hosting/cPanel
+- Backend only where needed: PHP + MySQL for CMS/admin/forms/onboarding
+- Do not build public website pages as PHP templates
+- Do only the requested page/module/task, one by one
+
+Update F:\lednexora\project-memory\11-project-changelog.md after completing the task.
+Task: Build the Employee Onboarding Form only.
+
+Read:
+- F:\lednexora\project-memory\06-employee-onboarding-form-plan.md
+- F:\lednexora\project-memory\07-shared-hosting-implementation-plan.md
+- approved onboarding form plan
+
+Requirements:
+- same website visual style
+- server-side validation
+- spam protection
+- PHP/MySQL compatible handling if backend is implemented now
+- thank-you/success state
+- secure upload handling only if confirmed
+
+After coding:
+1. test validation
+2. test submission flow
+3. test mobile layout
+4. check privacy/sensitive field handling
+5. update changelog
+

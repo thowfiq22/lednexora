@@ -1,0 +1,44 @@
+﻿Continue the Lednexora website redevelopment project.
+
+First read:
+F:\lednexora\project-memory\00-start-here.md
+
+Then read only the task-specific memory files needed for this work. Do not reread or paste all memory content unless necessary.
+
+Use source screenshots/assets from:
+F:\lednexora\source-content
+
+Do not change accepted scope, page names, page count, or design direction.
+Use the approved blue/white premium enterprise style with controlled gradient accents and Source Sans 3 as the primary free font.
+
+Confirmed stack:
+- Public frontend: Next.js + TypeScript
+- Frontend output: static export for shared hosting/cPanel
+- Backend only where needed: PHP + MySQL for CMS/admin/forms/onboarding
+- Do not build public website pages as PHP templates
+- Do only the requested page/module/task, one by one
+
+Update F:\lednexora\project-memory\11-project-changelog.md after completing the task.
+Task: Build CMS/Admin functionality only.
+
+Read:
+- F:\lednexora\project-memory\05-cms-admin-plan.md
+- F:\lednexora\project-memory\07-shared-hosting-implementation-plan.md
+- approved CMS/Admin plan
+
+Build only approved CMS features:
+- login/session
+- insights/articles
+- videos/media updates
+- testimonials if approved
+- selected settings if approved
+
+Do not make the full website editable.
+
+After coding:
+1. test login/logout
+2. test create/edit/publish/unpublish content
+3. test public listing/detail output
+4. test validation/security basics
+5. update changelog
+

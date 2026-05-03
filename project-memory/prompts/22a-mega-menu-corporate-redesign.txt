@@ -1,0 +1,53 @@
+﻿Continue the Lednexora website redevelopment project.
+
+Task: Upgrade navigation to a modern corporate mega menu.
+
+Read if needed:
+F:\lednexora\project-memory\01-final-scope-and-sitemap.md
+F:\lednexora\project-memory\08-navigation-url-map.md
+F:\lednexora\project-memory\02-design-system-and-reference-style.md
+
+Target:
+Create a premium enterprise mega menu inspired by Rimini/Salesforce/IBM navigation patterns.
+
+Desktop header requirements:
+- White header with Lednexora logo clearly visible.
+- Top contact bar can stay if it looks refined.
+- Main nav: Home, About, SAP Services, Zoho Services, Insights, Contact.
+- Strong Get Consultation CTA.
+- SAP Services opens a mega menu, not a tiny dropdown.
+- Zoho Services opens a smaller but polished mega menu.
+
+SAP mega menu structure:
+- Left intro column: SAP Services, short description, CTA to SAP Consultation.
+- Main links:
+  - SAP Capabilities
+  - By Initiative Solutions
+  - By Industry Solutions
+  - Lednexora SAP Solutions
+  - SAP Success Resources
+  - SAP Consultation
+- Optional right highlight card: Strategic SAP Advisory / Consultation.
+
+Zoho mega menu structure:
+- Left intro column: Zoho Services, short UK-friendly support summary.
+- Main links:
+  - Zoho Services Overview
+  - Zoho Business Solutions / Packages
+  - Zoho Consultation
+- Optional right highlight card: Zoho Bookkeeping & Business Support.
+
+Mobile navigation:
+- Clean slide-down or drawer menu.
+- SAP and Zoho groups expandable.
+- CTA visible.
+- No hover-only dependency on mobile.
+
+Rules:
+- Do not add new pages.
+- Do not rename accepted pages.
+- Use Next.js + TypeScript components.
+- Keep static export compatible.
+- No public PHP templates.
+
+After editing, test desktop hover/click behavior and mobile menu behavior.

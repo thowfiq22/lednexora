@@ -1,0 +1,44 @@
+﻿Continue the Lednexora website redevelopment project.
+
+First read:
+F:\lednexora\project-memory\00-start-here.md
+
+Then read only the task-specific memory files needed for this work. Do not reread or paste all memory content unless necessary.
+
+Use source screenshots/assets from:
+F:\lednexora\source-content
+
+Do not change accepted scope, page names, page count, or design direction.
+Use the approved blue/white premium enterprise style with controlled gradient accents and Source Sans 3 as the primary free font.
+
+Confirmed stack:
+- Public frontend: Next.js + TypeScript
+- Frontend output: static export for shared hosting/cPanel
+- Backend only where needed: PHP + MySQL for CMS/admin/forms/onboarding
+- Do not build public website pages as PHP templates
+- Do only the requested page/module/task, one by one
+
+Update F:\lednexora\project-memory\11-project-changelog.md after completing the task.
+Task: Prepare the Home page plan and content draft only. Do not code yet.
+
+Read:
+- F:\lednexora\project-memory\03-page-by-page-section-plan.md
+- F:\lednexora\project-memory\04-content-and-seo-plan.md
+- F:\lednexora\project-memory\12-source-asset-inventory.md
+- F:\lednexora\project-memory\10-ai-working-rules.md
+
+Use:
+- old Home screenshot
+- Lednexora logo
+- Rimini reference screenshot
+
+Output:
+1. final Home page section order
+2. refined content draft for each section
+3. image/asset needs
+4. CTA plan
+5. static vs dynamic notes
+6. implementation notes
+
+Important: Home hero is the most important visual section. Make it Rimini-level enterprise, but blue/white with controlled gradient and Lednexora branding.
+

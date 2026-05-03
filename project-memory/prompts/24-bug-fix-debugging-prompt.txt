@@ -1,0 +1,24 @@
+﻿Continue the Lednexora website redevelopment.
+
+Task: Debug and fix the reported issue.
+
+First read:
+F:\lednexora\project-memory\00-start-here.md
+F:\lednexora\project-memory\10-ai-working-rules.md
+F:\lednexora\project-memory\11-project-changelog.md
+
+Then inspect only the files related to the bug.
+
+Bug details:
+[PASTE BUG / SCREENSHOT / PAGE / ERROR HERE]
+
+Required process:
+1. reproduce or inspect the issue
+2. identify the affected page/component/file
+3. explain the likely cause briefly
+4. fix the smallest correct area
+5. test the fix
+6. update changelog with bug, fix, files changed, and remaining risk
+
+Do not change unrelated scope or redesign unrelated sections.
+

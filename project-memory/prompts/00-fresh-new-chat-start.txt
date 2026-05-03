@@ -1,0 +1,22 @@
+﻿Continue the Lednexora website redevelopment project.
+
+First read:
+F:\lednexora\project-memory\00-start-here.md
+
+Follow the read order from that file. Only open task-specific files needed for the current work.
+
+Use:
+F:\lednexora\source-content
+as the old content and design reference source.
+
+Do not change accepted scope.
+
+After reading, summarize in 5 short lines:
+1. accepted page scope
+2. design direction
+3. implementation direction
+4. current next step
+5. any missing input needed from me
+
+Do not start coding until I give the exact page/module task.
+

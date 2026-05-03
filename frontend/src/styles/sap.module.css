@@ -1,0 +1,487 @@
+/* ============================================================
+   SAP CAPABILITIES PAGE — Rich Rimini Corporate Style
+   ============================================================ */
+
+.pageWrapper {
+  background: #ffffff;
+}
+
+/* ─── WIREFRAME PLACEHOLDER ─── */
+.imageWireframe {
+  background: #e9ecef;
+  border: 2px dashed #adb5bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  border-radius: var(--radius-md);
+  color: #6c757d;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 2rem;
+}
+.wireframeVertical {
+  height: 100%;
+  min-height: 450px;
+}
+.wireframeSquare {
+  aspect-ratio: 1 / 1;
+}
+
+/* ─── HERO (Split) ─── */
+.heroSection {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.accentLine {
+  width: 60px;
+  height: 4px;
+  background: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+.heroTitle {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1.25rem;
+  letter-spacing: -.02em;
+  line-height: 1.1;
+}
+.heroDesc {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.heroBtn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.heroBtn:hover {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+.heroVisual {
+  width: 100%;
+}
+
+/* ─── EDITORIAL WITH IMAGE ─── */
+.overviewSection {
+  padding: 6rem 0;
+  background: #f8f9fa; /* Subtle grey */
+}
+.editorialGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+.editorialContent h2 {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  color: var(--color-heading);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.editorialContent p {
+  font-size: 1.0625rem;
+  color: var(--color-text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.textLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.textLink:hover {
+  text-decoration: underline;
+}
+
+/* ─── CORE PILLARS ─── */
+.pillarsSection {
+  padding: 6rem 0;
+}
+.sectionHeader {
+  max-width: 700px;
+  margin-bottom: 4rem;
+}
+.sectionHeader h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+.sectionHeader p {
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.pillarCard {
+  position: relative;
+  border: 1px solid var(--color-border);
+  padding: 2.5rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.pillarTopAccent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.pillarCard:hover .pillarTopAccent {
+  transform: scaleX(1);
+}
+.pillarCard:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+}
+.pillarIcon {
+  width: 40px;
+  height: 40px;
+  color: var(--color-heading);
+  margin-bottom: 1.5rem;
+}
+.pillarIcon svg {
+  width: 100%;
+  height: 100%;
+}
+.pillarCard h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+.pillarCard p {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+.pillarLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.pillarLink:hover {
+  text-decoration: underline;
+}
+
+/* ─── DARK BAND ─── */
+.darkBandSection {
+  background: var(--color-heading); /* Deep corporate blue */
+  padding: 4rem 0;
+  color: #ffffff;
+}
+.darkBandSection h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+.darkBandGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.darkBandList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.darkBandList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.darkBandList li:hover {
+  color: var(--color-accent);
+}
+.darkBandList svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-accent);
+}
+
+/* ─── BUSINESS OUTCOMES / TESTIMONIAL ─── */
+.outcomesSection {
+  padding: 6rem 0;
+  background: #f8f9fa;
+}
+.outcomesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.quoteMark {
+  font-size: 6rem;
+  color: var(--color-accent);
+  line-height: 0.5;
+  font-family: serif;
+  margin-bottom: 1rem;
+}
+.outcomesContent h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+.outcomesLead {
+  font-size: 1.125rem;
+  color: var(--color-text);
+  margin-bottom: 2.5rem;
+}
+.outcomesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.outcomesList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.outcomesList svg {
+  width: 24px;
+  height: 24px;
+  color: #10B981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.outcomesList strong {
+  display: block;
+  font-size: 1.0625rem;
+  color: var(--color-heading);
+  margin-bottom: 0.25rem;
+}
+.outcomesList span {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+.outcomesVisual {
+  width: 100%;
+}
+
+/* ─── BRIGHT CTA BAND ─── */
+.ctaSection {
+  padding: 5rem 0;
+  background: var(--color-accent); /* Bright brand blue */
+}
+.ctaSection .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.ctaContent h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.ctaContent p {
+  font-size: 1.125rem;
+  color: rgba(255,255,255,0.9);
+}
+.ctaFormMock {
+  background: transparent;
+}
+.mockInputGroup label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.mockInputWrapper {
+  display: flex;
+  width: 100%;
+}
+.mockInput {
+  flex-grow: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  font-family: inherit;
+}
+.mockInput:focus {
+  outline: none;
+}
+.mockBtn {
+  background: var(--color-heading);
+  color: #ffffff;
+  border: none;
+  padding: 0 2rem;
+  font-weight: 700;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.mockBtn:hover {
+  background: var(--color-primary);
+}
+.mockPrivacy {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.75rem;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .heroGrid, .editorialGrid, .outcomesGrid, .ctaSection .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .darkBandGrid, .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wireframeVertical {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .darkBandGrid, .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+  .heroSection, .overviewSection, .pillarsSection, .outcomesSection, .ctaSection, .darkBandSection {
+    padding: 4rem 0;
+  }
+}
+
+/* ─── NEW: Consultation Page Unique Form ─── */
+.consultWrapper {
+  padding: 5rem 0;
+  background: linear-gradient(160deg, #071D3A 0%, #0E2D5A 50%, #123A74 100%);
+  color: #fff;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.consultGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+.consultLeft {
+  padding-right: 2rem;
+}
+.consultLeft h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+.consultLeft > p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.consultProcess {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.processStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.stepNum {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(14,165,233,.15);
+  border: 1px solid rgba(14,165,233,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #7DD3FC;
+  flex-shrink: 0;
+}
+.stepContent h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+.stepContent p {
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,.6);
+  margin: 0;
+  line-height: 1.5;
+}
+.consultRight {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,.2);
+  color: var(--color-text);
+}
+
+@media (max-width: 992px) {
+  .consultGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .consultLeft {
+    padding-right: 0;
+  }
+  .consultRight {
+    padding: 2rem;
+  }
+}

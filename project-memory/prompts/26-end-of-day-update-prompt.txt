@@ -1,0 +1,15 @@
+﻿Update the Lednexora project memory after this work session.
+
+Read:
+F:\lednexora\project-memory\11-project-changelog.md
+
+Add a new dated entry with:
+1. completed work
+2. files changed
+3. decisions made
+4. bugs fixed
+5. open issues
+6. next recommended task
+
+Do not modify scope files unless an approved scope/design/content decision changed.
+
