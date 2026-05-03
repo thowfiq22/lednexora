@@ -350,6 +350,209 @@
   border-radius: 16px;
 }
 
+/* ─── 3-Column Pricing Cards ─── */
+.pricingCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+.pricingCardCol {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+.pricingCardCol:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+.pricingCardPopular {
+  border-color: #0ea5e9;
+  border-width: 2px;
+  box-shadow: 0 20px 50px rgba(14,165,233,0.1);
+  padding: 4rem 2.5rem; /* Make it taller */
+}
+.popularBadge {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0ea5e9;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.pricingCardCol h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+.pricingCardCol p {
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  min-height: 45px;
+}
+.pricingAmount {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-heading);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.pricingAmount span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+.pricingList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pricingList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-heading);
+  font-weight: 600;
+}
+.pricingList li svg {
+  color: #10B981;
+  width: 20px;
+  height: 20px;
+}
+.btnPricing {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background: var(--color-surface-alt);
+  color: var(--color-heading);
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.2s;
+  border: 1px solid var(--color-border);
+}
+.btnPricing:hover {
+  background: var(--color-border);
+}
+.btnPricingPopular {
+  background: #0ea5e9;
+  color: #fff;
+  border: none;
+}
+.btnPricingPopular:hover {
+  background: #0284c7;
+}
+
+/* ─── Detailed Comparison Table ─── */
+.compareSection {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+.compareTableWrapper {
+  overflow-x: auto;
+  margin-top: 3rem;
+}
+.compareTable {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+.compareTable th, .compareTable td {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+.compareTable th {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  background: var(--color-surface-alt);
+}
+.compareTable th:first-child, .compareTable td:first-child {
+  text-align: left;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+.compareTable td svg {
+  width: 24px;
+  height: 24px;
+  color: #10B981;
+}
+.compareTable td .missing {
+  color: #ef4444;
+}
+
+/* ─── Timeline / Process ─── */
+.timelineSection {
+  padding: 8rem 0;
+  background: var(--color-surface-alt);
+}
+.timelineGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+  position: relative;
+}
+.timelineGrid::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+.timelineStep {
+  position: relative;
+  z-index: 1;
+}
+.timelineNumber {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border: 2px solid #0ea5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0ea5e9;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 20px rgba(14,165,233,0.1);
+}
+.timelineStep h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+}
+.timelineStep p {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
 /* ─── Expert / Testimonial ─── */
 .expertSection {
   padding: 6rem 0;
@@ -442,25 +645,17 @@
 }
 
 @media (max-width: 992px) {
-  .heroGrid {
+  .pricingCardsGrid {
     grid-template-columns: 1fr;
-    gap: 3rem;
   }
-  .statContainer, .tabsLayout, .expertCard {
+  .pricingCardPopular {
+    padding: 3rem 2.5rem;
+  }
+  .timelineGrid {
     grid-template-columns: 1fr;
-    flex-direction: column;
-    text-align: center;
   }
-  .expertAvatar {
-    margin: 0 auto;
-  }
-  .grid6Container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 640px) {
-  .grid6Container {
-    grid-template-columns: 1fr;
+  .timelineGrid::before {
+    display: none;
   }
 }
 
