@@ -964,6 +964,19 @@
   font-weight: 800;
   color: var(--color-accent);
 }
+.pricingTable td svg {
+  width: 24px;
+  height: 24px;
+  color: #10B981;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.pricingTable td .missing {
+  color: #ef4444;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
 
 /* ─── 4-Column Problem/Solution Grid ─── */
 .psGrid {
