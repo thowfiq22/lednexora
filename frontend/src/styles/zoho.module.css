@@ -606,6 +606,102 @@
   font-family: serif;
 }
 
+/* ─── How it Works Flowchart ─── */
+.flowchartSection {
+  padding: 8rem 0;
+  background: #ffffff;
+}
+.flowchartContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.flowRow {
+  background: #fff;
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  border: 1px solid var(--color-border);
+  border-left: 8px solid;
+}
+.flowRow:nth-child(1) { border-left-color: #f59e0b; }
+.flowRow:nth-child(2) { border-left-color: #f97316; }
+.flowRow:nth-child(3) { border-left-color: #10b981; }
+
+.flowBadge {
+  position: absolute;
+  top: -16px;
+  left: 2rem;
+  background: var(--color-heading);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.flowRow:nth-child(1) .flowBadge { background: linear-gradient(135deg, #fcd34d, #f59e0b); color: #000; }
+.flowRow:nth-child(2) .flowBadge { background: linear-gradient(135deg, #fdba74, #f97316); color: #000; }
+.flowRow:nth-child(3) .flowBadge { background: linear-gradient(135deg, #6ee7b7, #10b981); color: #000; }
+
+.flowSteps {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.flowStep {
+  background: var(--color-heading);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.2s;
+  min-width: 140px;
+  text-align: center;
+  justify-content: center;
+}
+.flowStep:hover {
+  transform: translateY(-3px);
+}
+.flowStepPrimary {
+  background: #0ea5e9;
+}
+.flowArrow {
+  color: var(--color-muted);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .flowSteps {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flowArrow {
+    text-align: center;
+    transform: rotate(90deg);
+  }
+  .flowBadge {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .flowRow {
+    padding-top: 4rem;
+  }
+}
+
 /* ─── FAQs ─── */
 .faqSection {
   padding: 8rem 0;
