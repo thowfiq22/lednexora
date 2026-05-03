@@ -20,7 +20,7 @@ export default function ZohoServicesOverviewPage() {
         <div className="container">
           <div className={zohoStyles.heroContent} style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div className={zohoStyles.heroBadge} style={{ margin: '0 auto 1.5rem auto' }}>About Us</div>
-            <h1 className={zohoStyles.heroTitle} style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>
+            <h1 className={zohoStyles.heroTitle} style={{ marginBottom: '1.5rem' }}>
               Leading innovation through technology with vision and purpose.
             </h1>
             <p className={zohoStyles.heroDesc} style={{ fontSize: '1.25rem', marginBottom: '2.5rem', margin: '0 auto 2.5rem auto', maxWidth: '650px' }}>
@@ -198,6 +198,72 @@ export default function ZohoServicesOverviewPage() {
               </div>
             </div>
 
+const testimonials = [
+  {
+    quote: "With Lednexora, we have confidence that our Zoho systems are in expert hands. That trust allows our team to focus on enabling the business rather than worrying about software support.",
+    author: "ALEX CHIU",
+    title: "IT MANAGER\nUK MANUFACTURING CORP",
+    image: "https://images.unsplash.com/photo-1504917595217-d4ce5eb96714?q=80&w=1600&auto=format&fit=crop"
+  },
+  {
+    quote: "The scope of support covers our entire custom architecture. We have experienced faster time to solution and zero hesitation in resolving complex integration issues.",
+    author: "SARAH JENKINS",
+    title: "OPERATIONS DIRECTOR\nLOGISTICS LTD",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1600&auto=format&fit=crop"
+  },
+  {
+    quote: "Their team didn't just implement Zoho; they re-engineered our daily bookkeeping. The BPO division handles everything flawlessly, saving our accountants hours of manual work.",
+    author: "DAVID MOORE",
+    title: "CFO\nTECH RETAILERS GROUP",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop"
+  }
+];
+
+function TestimonialSlider() {
+  const [current, setCurrent] = React.useState(0);
+  const t = testimonials[current];
+
+  return (
+    <div style={{ background: '#fff', color: '#000', padding: '6rem 0' }}>
+      <div className="container">
+        <h2 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '4rem', color: '#000' }}>Hear what our clients have to say</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+          
+          <div style={{ position: 'relative', display: 'flex', gap: '2rem' }}>
+            <button onClick={() => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1))} style={{ background: 'none', border: 'none', fontSize: '2rem', cursor: 'pointer', color: '#ccc' }}>
+              &lsaquo;
+            </button>
+            <div style={{ flex: 1, borderLeft: '4px solid #fcd34d', paddingLeft: '2rem', position: 'relative' }}>
+              <div style={{ position: 'absolute', top: '-40px', left: '10px', fontSize: '6rem', color: '#fcd34d', fontFamily: 'serif', lineHeight: 1 }}>
+                “
+              </div>
+              <p style={{ fontSize: '1.5rem', lineHeight: 1.6, fontWeight: 500, marginBottom: '2rem', position: 'relative', zIndex: 2 }}>
+                {t.quote}
+              </p>
+              <p style={{ fontSize: '0.875rem', fontWeight: 700, letterSpacing: '0.1em', color: '#666', textTransform: 'uppercase', whiteSpace: 'pre-line' }}>
+                — {t.author}<br/>{t.title}
+              </p>
+              <div style={{ marginTop: '3rem' }}>
+                <a href="#" style={{ display: 'inline-block', background: '#fcd34d', color: '#000', padding: '1rem 2rem', fontWeight: 700, textDecoration: 'none' }}>
+                  Read story
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ position: 'relative' }}>
+            <img src={t.image} alt={t.author} style={{ width: '100%', height: '500px', objectFit: 'cover' }} />
+            <button onClick={() => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1))} style={{ position: 'absolute', right: '-40px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', fontSize: '2rem', cursor: 'pointer', color: '#ccc' }}>
+              &rsaquo;
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
             {/* Step 3: Delivery */}
             <div className={zohoStyles.vFlowStep}>
               <div className={zohoStyles.vFlowIcon}>3</div>
@@ -227,26 +293,8 @@ export default function ZohoServicesOverviewPage() {
         </div>
       </Rev>
 
-      {/* ─── 5. EXPERT TESTIMONIAL (Improvised) ─── */}
-      <Rev className={zohoStyles.expertSection}>
-        <div className="container">
-          <div className={zohoStyles.expertCard}>
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Client Testimonial" className={zohoStyles.expertAvatar} />
-            <div className={zohoStyles.expertContent}>
-              <div className={zohoStyles.expertQuote}>
-                Lednexora didn't just configure software; they fundamentally re-architected how our sales and operations communicate. We replaced 4 disjointed tools with a single, highly customised Zoho instance.
-              </div>
-              <div style={{ marginTop: '2rem' }}>
-                <h3>Sarah Jenkins</h3>
-                <h4>Operations Director, UK Logistics Ltd</h4>
-                <div style={{ display: 'flex', gap: '4px', color: '#f59e0b', marginTop: '0.5rem' }}>
-                  ★ ★ ★ ★ ★
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Rev>
+      {/* ─── 5. EXPERT TESTIMONIAL (Rimini Style) ─── */}
+      <TestimonialSlider />
 
       {/* ─── 6. GLOBAL CTA BAND ─── */}
       <section className={h.ctaBand}>
@@ -256,10 +304,10 @@ export default function ZohoServicesOverviewPage() {
               <h2>Ready to scope your project?</h2>
               <p>Connect with our technical architects to discuss your integration requirements or audit your current setup.</p>
               <div className={h.ctaBandActions}>
-                <Link href="/zoho-business-solutions-packages" className={h.btnPrimary} style={{ background: '#fff', color: '#0ea5e9' }}>
+                <Link href="/zoho-business-solutions-packages" className={h.btnWhite}>
                   View Pricing Packages
                 </Link>
-                <Link href="/zoho-consultation" className={h.btnWhite}>
+                <Link href="/zoho-consultation" className={`${h.btnWhite} ${h.btnOutline}`}>
                   Schedule Consultation <IconArrowRight />
                 </Link>
               </div>
