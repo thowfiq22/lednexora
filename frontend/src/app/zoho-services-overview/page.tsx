@@ -16,41 +16,104 @@ export default function ZohoServicesOverviewPage() {
     <div className={zohoStyles.pageWrapper}>
       
       {/* ─── 1. HERO ─── */}
-      <section className={zohoStyles.zohoHero} style={{ textAlign: 'left', padding: '6rem 0' }}>
+      <section className={zohoStyles.zohoHero} style={{ textAlign: 'center', padding: '8rem 0 10rem 0' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
-            <div className={zohoStyles.heroContent} style={{ maxWidth: '600px', margin: 0 }}>
-              <div className={zohoStyles.heroBadge} style={{ marginBottom: '1.5rem' }}>About Us</div>
-              <h1 className={zohoStyles.heroTitle} style={{ fontSize: '3.5rem', marginBottom: '2rem' }}>
-                Leading innovation through technology with vision and purpose.
-              </h1>
-              <p className={zohoStyles.heroDesc} style={{ fontSize: '1.125rem', marginBottom: '2.5rem' }}>
-                We bridge the gap between complex enterprise operations and intuitive, scalable software. Whether you need ongoing BPO management or bespoke Zoho architecture, we are your dedicated digital partner.
+          <div className={zohoStyles.heroContent} style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <div className={zohoStyles.heroBadge} style={{ margin: '0 auto 1.5rem auto' }}>About Us</div>
+            <h1 className={zohoStyles.heroTitle} style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>
+              Leading innovation through technology with vision and purpose.
+            </h1>
+            <p className={zohoStyles.heroDesc} style={{ fontSize: '1.25rem', marginBottom: '2.5rem', margin: '0 auto 2.5rem auto', maxWidth: '650px' }}>
+              We bridge the gap between complex enterprise operations and intuitive, scalable software. Whether you need ongoing BPO management or bespoke Zoho architecture, we are your dedicated digital partner.
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+              <a href="#divisions" className={zohoStyles.heroBtn}>
+                Explore Our Divisions <IconArrowRight />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 1.5 THE DIVISIONS (Modern Section) ─── */}
+      <section id="divisions" style={{ marginTop: '-6rem', position: 'relative', zIndex: 10, paddingBottom: '4rem' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            
+            {/* BPO Division */}
+            <div style={{ 
+              background: '#fff', 
+              borderRadius: '24px', 
+              padding: '3rem', 
+              boxShadow: '0 20px 40px rgba(0,0,0,0.08)', 
+              border: '1px solid rgba(0,0,0,0.05)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1.5rem',
+              transition: 'transform 0.3s'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
+            onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+              <div style={{ 
+                width: '64px', height: '64px', borderRadius: '16px', background: 'rgba(14,165,233,0.1)', 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0ea5e9'
+              }}>
+                <IconUsers />
+              </div>
+              <h2 style={{ fontSize: '2rem', color: '#0f172a', fontWeight: 800 }}>Zoho BPO Division</h2>
+              <p style={{ color: '#475569', fontSize: '1.1rem', lineHeight: 1.7 }}>
+                We manage your daily bookkeeping operations as a trusted BPO partner. We simplify tax filing for your accountants and deliver real-time profitability and financial insights for management, all powered by a single, reliable Zoho source of truth.
               </p>
-              <div style={{ display: 'flex', gap: '1rem' }}>
-                <a href="#how-it-works" className={zohoStyles.heroBtn}>
-                  See How It Works <IconArrowRight />
-                </a>
-              </div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '1rem 0 0 0', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a', fontWeight: 600 }}>
+                  <span style={{ color: '#0ea5e9' }}>✓</span> Daily Bookkeeping Operations
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a', fontWeight: 600 }}>
+                  <span style={{ color: '#0ea5e9' }}>✓</span> Automated Tax Filing Prep
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a', fontWeight: 600 }}>
+                  <span style={{ color: '#0ea5e9' }}>✓</span> Real-Time Management Insights
+                </li>
+              </ul>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              <div className={zohoStyles.grid6Card} style={{ background: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.1)', padding: '2rem' }}>
-                <h3 style={{ color: '#fff', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <IconUsers /> Zoho BPO Division
-                </h3>
-                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1rem', lineHeight: 1.6, marginTop: '1rem' }}>
-                  We manage your daily bookkeeping operations as a trusted BPO partner, simplifying tax filing for your accountants and delivering real-time profitability and financial insights for management, all powered by a single, reliable Zoho source of truth.
-                </p>
+
+            {/* Consulting Division */}
+            <div style={{ 
+              background: '#fff', 
+              borderRadius: '24px', 
+              padding: '3rem', 
+              boxShadow: '0 20px 40px rgba(0,0,0,0.08)', 
+              border: '1px solid rgba(0,0,0,0.05)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '1.5rem',
+              transition: 'transform 0.3s'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
+            onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+              <div style={{ 
+                width: '64px', height: '64px', borderRadius: '16px', background: 'rgba(16,185,129,0.1)', 
+                display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#10b981'
+              }}>
+                <IconDatabase />
               </div>
-              <div className={zohoStyles.grid6Card} style={{ background: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.1)', padding: '2rem' }}>
-                <h3 style={{ color: '#fff', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <IconDatabase /> Zoho Consulting Division
-                </h3>
-                <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '1rem', lineHeight: 1.6, marginTop: '1rem' }}>
-                  We offer end-to-end implementation, secure data migration, and on-demand consulting to ensure your enterprise architecture is perfectly aligned with your strategic business goals.
-                </p>
-              </div>
+              <h2 style={{ fontSize: '2rem', color: '#0f172a', fontWeight: 800 }}>Zoho Consulting Division</h2>
+              <p style={{ color: '#475569', fontSize: '1.1rem', lineHeight: 1.7 }}>
+                We offer end-to-end implementation, secure data migration, and on-demand consulting to ensure your enterprise architecture is perfectly aligned with your strategic business goals.
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '1rem 0 0 0', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a', fontWeight: 600 }}>
+                  <span style={{ color: '#10b981' }}>✓</span> End-to-End Implementation
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a', fontWeight: 600 }}>
+                  <span style={{ color: '#10b981' }}>✓</span> Secure Data Migration
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a', fontWeight: 600 }}>
+                  <span style={{ color: '#10b981' }}>✓</span> On-Demand Architecture Consulting
+                </li>
+              </ul>
             </div>
+
           </div>
         </div>
       </section>
